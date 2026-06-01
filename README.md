@@ -6,8 +6,6 @@ Este projeto foi desenvolvido no âmbito do curso **CET em Aplicações de Infor
 
 O objetivo era criar um site para uma empresa fictícia de consultoria de dados — a **InSyte Consultoria** —, simulando um produto real com identidade visual, estrutura de navegação, apresentação de serviços e página de equipa. O projeto foi desenvolvido a pares por **Géssica Nonato** e **Danielly Toledo**.
 
-Link: daniellytoledo.github.io/data_consulting_IEFP/
-
 ---
 
 ## Sobre o Projeto
