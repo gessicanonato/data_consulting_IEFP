@@ -1,0 +1,190 @@
+/* LAYOUT TIPO FOLHA A4*/
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #ecefee;
+    margin: 0;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Conteúdo centralizado como página */
+#page {
+    width: 800px; /* largura semelhante ao Word */
+    background: white;
+    padding: 40px 50px;
+    border-radius: 6px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+/* BOTÃO FIXO PARA PDF */
+
+#btnPDF {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #5195a1;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    z-index: 999;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+#btnPDF:hover {
+    background-color: #3c7c86;
+}
+
+/* TÍTULOS */
+h1 {
+    text-align: center;
+    color: #5195a1;
+    font-size: 36px;
+    letter-spacing: 1px;
+}
+
+h2, h3, h4 {
+    color: #5195a1;
+    margin-top: 30px;
+}
+
+/* LINHAS DIVISÓRIAS */
+hr {
+    border: none;
+    border-top: 2px solid #dcdcdc;
+    margin: 30px 0;
+}
+
+/* PARÁGRAFOS E TEXTO */
+p {
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+strong {
+    color: #5195a1;
+}
+
+/* LISTAS */
+ul {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+ul li {
+    margin-bottom: 6px;
+    font-size: 16px;
+}
+
+/* Bolinhas elegantes */
+ul li::marker {
+    color: #5195a1;
+    font-size: 18px;
+}
+
+/* TABELAS COMPACTAS */
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background: white;
+}
+
+table th {
+    background-color: #5195a1;
+    color: white;
+    padding: 8px 10px;
+    text-align: left;
+    font-size: 15px;
+}
+
+table td {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f3fafa;
+}
+
+/* SEÇÕES DESTACADAS */
+section {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+ .conclusao {
+    background-color: #e8f0f2;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 30px;
+    border-left: 4px solid #3d8a96;
+}
+.conclusao h2 {
+    color: #2c6b7a;
+    border-left: none;
+    padding-left: 0;
+}
+.conclusao p {
+    color: #2c5a66;
+}
+
+/* IMPRESSÃO PARA PDF */
+@media print {
+
+    /* força o navegador a manter o layout */
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    body {
+        background: white !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    #btnPDF {
+        display: none !important;
+    }
+
+    #page {
+        width: 800px !important;
+        margin: 0 auto !important;
+        padding: 40px 50px !important;
+        background: white !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+    }
+
+    table {
+        width: 50% !important;
+        background-color: white !important;
+    }
+
+    table th {
+        background-color: #5195a1 !important;
+        color: white !important;
+    }
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 900px) {
+    #page {
+        width: 90%;
+        padding: 25px;
+    }
+
+    table {
+        width: 100%;
+    }
+}
